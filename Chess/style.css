@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+#gameboard {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.square {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.square svg {
+  height: 30px;
+  width: 30px;
+  margin: 5px;
+  position: relative;
+  z-index: -9;
+}
+path {
+  position: relative;
+  z-index: -10;
+}
+.piece {
+  position: relative;
+  z-index: 9;
+}
+
+.blue {
+  background-color: rgb(117, 117, 129);
+}
+.lightblue {
+  background-color: rgb(235, 247, 243);
+}
+.pink {
+  fill: rgb(219, 16, 83);
+}
+.green {
+  fill: rgb(76, 192, 8);
+}
